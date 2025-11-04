@@ -1,0 +1,31 @@
+my-blog-back-app/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── myblog/
+│   │   │           ├── config/              # Spring конфигурации
+│   │   │           ├── controller/          # REST контроллеры
+│   │   │           ├── dao/                 # DAO слой
+│   │   │           ├── model/               # Модели (Post, Comment)
+│   │   │           ├── service/             # Сервисный слой
+│   │   │           └── ApplicationInitializer.java  # Инициализатор для Servlet
+│   │   ├── resources/
+│   │   │   ├── application.properties       # Настройки БД
+│   │   │   ├── schema.sql                   # Создание таблиц
+│   │   │   └── data.sql                     # Начальные данные (опционально)
+│   │   └── webapp/
+│   │       └── WEB-INF/
+│   │           └── web.xml                  # Servlet конфигурация
+│   └── test/
+│       ├── java/
+│       │   └── com/
+│       │       └── myblog/
+│       │           ├── service/
+│       │           └── controller/
+│       └── resources/
+│           └── test-application.properties  # Настройки для тестов
+├── pom.xml
+├── .gitignore
+├── README.md
+└── Dockerfile
